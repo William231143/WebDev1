@@ -27,6 +27,7 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="https://iconifier.net/iconified/20220422234053_IMG-1503/favicon.ico" />
 
     <!-- JavaScript -->
     <!-- These are needed to get the responsive menu to work -->
@@ -73,7 +74,11 @@
             <a href="Favorites.html" class="nav-item nav-link active"
               >Favorites</a
             >
+
             <a href="list.html" class="nav-item nav-link active">Lists</a>
+            <a href="#" class="nav-item nav-link disabled" tabindex="-1"
+              >Games</a
+            >
             <a
               href="mailto:sample@gmail.com?Subject=Hello"
               class="nav-item nav-link disabled"
@@ -97,6 +102,11 @@
       <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
       <h3>Top Places I want to visit</h3>
       <ol>
+        <style>
+          ol {
+            background-color: rgb(251, 1, 1);
+          }
+        </style>
         <li>Japan</li>
         <li>Finland</li>
         <li>Iceland</li>
@@ -105,11 +115,11 @@
       <style>
         ul {
           list-style-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHt9wXQPFd6CKSos_GNDkuMKAVtNjcQQM9EaRY7_ZxJdrxuiX9NkCAZjbaQ_GSJIoIxOs:https://i.pinimg.com/originals/28/f8/2c/28f82c1560e544acb8fbbad95c83b194.png&usqp=CAU);
-        list-style-position: 50px 50px
+          list-style-position: inside;
         }
       </style>
       <p>My Classes for the quarter</p>
-      <ul>
+      <ul class="inside">
         <li>Web Development</li>
         <li>Pre-Calc</li>
         <li>Japanese 3</li>
