@@ -1,3 +1,4 @@
+@import url(rainbow.css);
 .button {
   background-color: #4caf50;
   border: none;
@@ -76,3 +77,18 @@ h6 {
 .width-of-img{
 	width:100%;
 }
+#knowledge > * {
+	border: 3px red solid;
+  }
+  p + * {
+	background-color: #FFFF00;
+  }
+  div li::marker{
+	color: red;
+  }
+  div ul > *::marker{
+	content:"😜 ";
+  }
+  #rainbow td:hover {
+	background-color: black;
+  }
