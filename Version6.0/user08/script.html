@@ -71,7 +71,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav">
             <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your Menu ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="index.html" class="nav-item nav-link active">Home</a>
             <a href="#" class="nav-item nav-link">About Me</a>
             <a href="#" class="nav-item nav-link disabled" tabindex="-1"
               >Music</a
@@ -79,7 +79,7 @@
             <a href="#" class="nav-item nav-link disabled" tabindex="-1"
               >Lists</a
             >
-            <a href="#" class="nav-item nav-link disabled" tabindex="-1"
+            <a href="games.html" class="nav-item nav-link active" tabindex="-1"
               >Games</a
             >
             <a href="script.html" class="nav-item nav-link active" tabindex="-1"
@@ -128,15 +128,67 @@
               <input type="text" id="fname" onblur="upperCase()" />
             </center>
           </div>
-          <div class="col-sm-3" style="background-color: orange">nothing</div>
-          <div class="col-sm-3" style="background-color: yellow">nothing</div>
-          <div class="col-sm-3" style="background-color: orange">nothing</div>
+          <div class="col-sm-3" style="background-color: orange">
+            <center>
+              Enter any text:
+              <input type="text" id="onRelease" onkeyup="keyup()" />
+            </center>
+          </div>
+          <div class="col-sm-3" style="background-color: yellow">
+            <center>
+              <h2
+                onmouseover="style.color='blue'"
+                onmouseout="style.color='black'"
+              >
+                Mouse over this text
+              </h2>
+            </center>
+          </div>
+          <div class="col-sm-3" style="background-color: orange">
+            <center>
+              <form onsubmit="confirmInput()" action="games.html">
+                Enter your name: <input id="random" type="text" size="20" />
+                <input type="submit" />
+              </form>
+            </center>
+          </div>
         </div>
         <div class="row">
-          <div class="col-sm-3" style="background-color: yellow">nothing</div>
-          <div class="col-sm-3" style="background-color: orange">nothing</div>
-          <div class="col-sm-3" style="background-color: yellow">nothing</div>
-          <div class="col-sm-3" style="background-color: orange">nothing</div>
+          <div
+            class="col-sm-3"
+            style="background-color: yellow"
+            onmousedown="whichElement(event)"
+          >
+            <center>
+              <p>Try clicking this text</p>
+            </center>
+          </div>
+          <div class="col-sm-3" style="background-color: orange">
+            <center>
+              <p
+                onmousedown="mouseclicking(this,'blue')"
+                onmouseup="mouseclicking(this,'green')"
+              >
+                Click me (also try holding)
+              </p>
+            </center>
+          </div>
+          <div class="col-sm-3" style="background-color: yellow">
+            <center>
+              Try clicking the input box:
+              <input type="text" onfocus="inputcolor(this)" />
+            </center>
+          </div>
+          <div class="col-sm-3" style="background-color: orange">
+            <center>
+            <input type="button" value="Open 'myWindow'" onclick="openWin()" />
+            <input
+              type="button"
+              value="Close 'myWindow'"
+              onclick="closeWin()"
+            />
+            </center>
+          </div>
         </div>
       </div>
     </div>
