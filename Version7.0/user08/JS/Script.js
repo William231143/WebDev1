@@ -1,6 +1,6 @@
 var space = " ";
 var pos = 0;
-var msg = "User 08";
+var msg = "William Baker-User 08";
 
 function Scroll() {
   document.title =
