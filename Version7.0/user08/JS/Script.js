@@ -11,3 +11,9 @@ function Scroll() {
   window.setTimeout("Scroll()", 0);
 }
 Scroll();
+function mouseclicking(elmnt, clr) {
+  elmnt.style.color = clr;
+}
+function inputcolor(x) {
+  x.style.background = "lightblue";
+}

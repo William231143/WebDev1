@@ -48,12 +48,12 @@
       .wideMargin {
         margin: 15px;
       }
-
       footer {
         font-size: 16px;
         text-align: center;
         background-color: rgb(202, 195, 195);
       }
+
       td {
         color: #000000;
       }
@@ -86,15 +86,14 @@
               >Favorites</a
             >
 
-
             <a href="games.html" class="nav-item nav-link active" tabindex="-1"
               >Games</a
             >
             <a
-              href="contact.html"
+              href="hobbies.html"
               class="nav-item nav-link active"
               tabindex="-1"
-              >Contact</a
+              >My Hobbies</a
             >
             <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Edit These Items in your Menu ↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
           </div>
@@ -171,7 +170,12 @@
         </tr>
         <tr>
           <td>5</td>
-          <td>Ubisoft</td>
+          <td
+            onmousedown="mouseclicking(this,'blue')"
+            onmouseup="mouseclicking(this,'black')"
+          >
+            Ubisoft
+          </td>
           <td onmouseover="style.color='blue'" onmouseout="style.color='black'">
             Rainbow Six Siege
           </td>
